@@ -1,0 +1,32 @@
+{% extends 'navbar.html' %}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>my django project</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        {% load static %}
+        <style>
+            h2{
+                color:green;
+            }
+        </style>
+    </head>
+    <body>
+        {% block navbar %}
+        <h1 style="color:red">welcome to my django </h1>
+        <h2>hai</h2>
+        <h1>hello</h1>
+        <a href="about">welcome page</a>
+        <img src="{% static 'flower1.jpg' %}"alt="flower">
+        <script src="" async defer></script>
+       
+      {% endblock %}   
+        </body>
+</html>
